@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            Title Name: TAR Hotpot
+            
+            Authors:
+            1. Courtney Chew Cheah Ni
+            2. Leslie Chai Yee Xuan
+            3. Lee Khar Seng
+            4. Kueh Chaw Chun
+            5. Sheyn Tan Xin Ying
+            Date Created: 28/02/2021
+            Date Modified: 16/04/2021
+
+            File Name: dipsauce.html
+            In charge: Courtney Chew Cheah Ni
+        -->
+        <meta charset="UTF-8">
+        <title>Dipping Sauce</title>
+        <link rel="shortcut icon" href="logo02-removebg-preview.png" type="image/x-con" />
+        <link href="base.css" rel="stylesheet" />
+
+        <style>
+            /*Title*/
+            h1 {
+                font-size: 55px;
+                text-align: center;
+                color: white;
+                text-shadow: 2px 2px 5px rgba(255, 190, 106, 0.959);
+                border-bottom: 2px solid rgba(248, 234, 207, 0.959);
+                padding-bottom: 20px;
+                margin-left: 80px;
+                margin-right: 60px;
+                margin-top: 10px;
+            }
+
+            /*Left section vertical navigation bar*/
+            #leftsec-nav {
+                width: 100px;
+                text-align: center;
+                position: fixed;
+                margin-top: 20px;
+            }
+
+            #leftsec-nav a .foodcategory {
+                background-color: white;
+                border: 3px solid rgb(255, 169, 41);
+                border-radius: 130px;
+                margin: 15px 11px 12px;
+                width: 72px;
+                height: 73px;
+                box-sizing: border-box;
+                
+            }
+
+            #leftsec-nav a {
+                text-decoration: none;
+                color: black;
+                font-size: 11px;
+                font-weight: bold;
+            }
+
+            #leftsec-nav a .foodcategory:hover {
+                border: 4px solid rgb(252, 184, 38);
+                background-color: rgba(255, 255, 255, 0.932);
+                box-shadow: 1px 1px 7px 2px rgb(255, 163, 26);
+            }
+
+            #leftsec-nav .foodcategory img {
+                margin-top: 8px;
+                margin-bottom: 1px;
+                width: auto;
+                height: 27px;
+            }
+
+            #leftsec-nav .foodcategory p {
+                margin: 0px;
+            }
+
+            /*Right section contents*/
+
+            #rightsec {
+                text-align: center;
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                flex-flow: row wrap;
+                width: 80%;
+                height: auto;
+                box-sizing: border-box;
+                justify-content: center;
+            }
+
+            #rightsec .sauce {
+                width: 25%;
+                margin: 30px 30px 30px 50px;
+            }
+
+            #rightsec .sauce img {
+                width: 100%;
+                height: auto;
+                border-radius: 100%;
+                box-shadow: 1px 1px 10px 2px rgb(241, 205, 168);
+            }
+
+            #rightsec .sauce .description {
+                display: none;
+                color: white;
+                margin: 10px;
+                padding: 5px 15px;
+                font-size: 18px;
+                box-sizing: border-box;
+            }
+
+            #rightsec .sauce .description h2{
+                font-size: 30px;
+                margin: 10px;
+            }
+
+            #rightsec .sauce:hover img{
+                animation: rotateimg 1.5s 1;
+            }
+
+            @keyframes rotateimg {
+                from {transform: rotate(0deg);}
+                50% {transform: rotate(90deg);}
+                to {transform: rotate(0deg);}
+            }
+
+            #rightsec .sauce:hover .description {
+                display: block;
+                border: 7px double rgb(255, 255, 255);
+                border-radius: 15%;
+                background-image: linear-gradient(to bottom right, rgb(177, 0, 0), rgb(255, 136, 0));
+            }
+
+            #extrasauce {
+                font-size: 20px;
+                color: white;
+                text-align: center;
+                border: 8px dotted white;
+                border-radius: 35px;
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 120px;
+                padding: 20px 40px;
+                box-sizing: border-box;
+                background-image: linear-gradient(to bottom right, red, rgb(255, 187, 0));
+                background-color: red;
+            }
+
+            #extrasauce h3 {
+                font-size: 35px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <figure>
+                    <a href="index.html">
+                        <img src="logo02-removebg-preview.png" alt="Restaurant logo" />                  
+                        <figcaption>TAR HOTPOT</figcaption>
+                    </a>
+                </figure>
+                <ul id="main">
+                    <li><a href="aboutus.html" target="_blank">ABOUT US</a></li>
+                    <li><a href="menu.html" target="_blank">OUR MENU</a></li>
+                    <li><a href="membership.html" target="_blank">MEMBERSHIP</a></li>
+                    <li><a href="promotion.html" target="_blank">PROMOTION</a></li>
+                    <li><a href="contact.html" target="_blank">CONTACT US</a>
+                    <li id="more">MORE
+                        <ul id="more-content">
+                            <li><a href="reserve.html" target="_blank">RESERVATION</a></li>
+                            <li><a href="faq.html" target="_blank">FAQ</a></li>
+                            <li><a href="joinus.html" target="_blank">JOIN US</a></li>
+                            <li><a href="cusfeed.html" target="_blank">CUSTOMER FEEDBACK</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="navNmenu">
+            <!--Small navigation menu inside food menu (Left section)-->
+            <section id="leftsec-nav">
+                <a href="soup.html">
+                    <div class="foodcategory">
+                        <img src="Hotpotlogo-removebg-preview.png" />
+                        <p>Soup Bases</p>
+                    </div>
+                </a>
+                <a href="meat.html"> 
+                    <div class="foodcategory">
+                        <img src="Disheslogo-removebg.png" />
+                        <p>Dishes</p>
+                    </div>
+                </a>
+                <a href="drinks.html">
+                    <div class="foodcategory">
+                        <img src="beveragelogo-removebg-preview.png" />
+                        <p>Beverages</p>
+                    </div>
+                </a>
+                <a href="sides.html">
+                    <div class="foodcategory">
+                        <img src="snacklogo-removebg-preview.png" />
+                        <p>Snacks</p>
+                    </div>
+                </a>
+                <a href="dipsauce.html">
+                    <div class="foodcategory">
+                        <img src="Dipsauce-removebg-preview.png" />
+                        <p>Dipping Sauces</p>
+                    </div>
+                </a>
+            </section>
+            <!--Right section-->
+            <h1>Dipping Sauces</h1>
+            <section id="rightsec">
+                <div class="sauce">
+                    <img src="sichuansauce.png" /></a>
+                    <div class="description">
+                        <h2>Sichuan Sauce</h2><hr/>
+                        <p>A spicy sauce that is a mix of broth, tomato paste, vinegar, sugar, soy sauce, oil, cornstarch and red pepper.</p>
+                    </div>
+                </div>
+                <div class="sauce">
+                    <img src="thaichili.png" /></a>
+                    <div class="description">
+                        <h2>Thai Chili Sauce</h2><hr/>
+                        <p>A simultaneously sweet, savory, tangy and spicy sauce incorporating red chilies, garlic, ginger, sugar and vinegar.</p>
+                    </div>
+                </div>
+                <div class="sauce">
+                    <img src="belacan.png" /></a>
+                    <div class="description">
+                        <h2>Belacan Sauce</h2><hr/>
+                        <p>A Malaysian-style sambal with dried shrimp, fresh and dried chili, and belacan, a fermented shrimp paste.</p>
+                    </div>
+                </div>
+                <div class="sauce">
+                    <img src="chilisauce.png" /></a>
+                    <div class="description">
+                        <h2>Chili Sauce</h2><hr/>
+                        <p>Add some spiciness to your fried food with this!</p>
+                    </div>
+                </div>
+                <div class="sauce">
+                    <img src="tomatosauce.png" /></a>
+                    <div class="description">
+                        <h2>Tomato Sauce</h2><hr/>
+                        <p>This is for you if you want a non-spicy dip for your fried food.</p>
+                    </div>
+                </div>
+            </section>
+            <div id="extrasauce">
+                <h3>Not a fan of any of these? Not a problem!</h3>
+                <p>We've also prepared chili flakes, soy sauce, garlic, garlic oil and many more for you to make your very own dipping sauce!</p>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright &#169; 2021 The Aurizn Restaurant. All Rights Reserved. | Photos are for reference only</p>
+        </footer>
+    </body>
+</html>

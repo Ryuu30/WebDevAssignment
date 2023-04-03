@@ -1,0 +1,210 @@
+/*
+File Name: base.css
+In charge: Courtney Chew Cheah Ni
+Date created: 17/04/2021
+
+The design of the food menu
+*/
+
+/*Fonts */
+@font-face {
+    font-family: Oswald;
+    src: url("Oswald-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Ma Shan Zheng";
+    src: url("MaShanZheng-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Londrina Solid";
+    src: url("LondrinaSolid-Light.ttf") format("truetype");
+}
+
+/*Title*/
+h1 {
+    font-size: 55px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(255, 233, 106, 0.959);
+    border-bottom: 2px solid rgba(248, 242, 207, 0.959);
+    padding-bottom: 20px;
+    margin-left: 80px;
+    margin-right: 60px;
+    margin-top: 10px;
+}
+
+/*Left section vertical navigation bar*/
+#leftsec-nav {
+    width: 100px;
+    text-align: center;
+    position: fixed;
+    margin-top: 20px;
+}
+
+#leftsec-nav a .foodcategory {
+    background-color: white;
+    border: 3px solid rgb(255, 169, 41);
+    border-radius: 130px;
+    margin: 15px 11px 12px;
+    width: 72px;
+    height: 73px;
+    box-sizing: border-box;
+}
+
+#leftsec-nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#leftsec-nav a .foodcategory:hover {
+    border: 4px solid rgb(252, 184, 38);
+    background-color: rgba(255, 255, 255, 0.932);
+    box-shadow: 1px 1px 7px 2px rgb(255, 163, 26);
+}
+
+#leftsec-nav .foodcategory img {
+    margin-top: 8px;
+    margin-bottom: 1px;
+    width: auto;
+    height: 27px;
+}
+
+#leftsec-nav .foodcategory p {
+    margin: 0px;
+}
+
+/*Right section menu*/
+#rightsec-Menu {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+    width: 88%;
+    height: 100px;
+    margin: 0px auto 70px;
+    position: relative;
+}
+
+#rightsec-Menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#rightsec-Menu a .dishmenu {
+    width: 140px;
+    height: 60px;
+    margin: 10px 10px 10px 40px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 4px solid rgba(245, 205, 26, 0.938);
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom, rgba(250, 204, 0, 0.986), rgba(212, 114, 1, 0.945));
+}
+
+#rightsec-Menu a .dishmenu p {
+    margin: 10%;
+}
+
+#rightsec-Menu a:hover .dishmenu {
+    font-size: 21px;
+    width: 160px;
+    height: auto;
+    border: 5px solid rgba(240, 184, 0, 0.842);
+    box-shadow: 1px 1px 12px 7px rgb(245, 169, 4);
+}
+
+/*Right section contents*/
+#rightsec-Content {
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    height: auto;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#rightsec-Content .food {
+    position: relative;
+    width: 25%;
+    margin: 10px 30px 60px 50px;
+    border: 5px solid rgba(255, 233, 106, 0.959);
+    box-shadow: 4px 3px 12px 5px rgba(255, 233, 106, 0.959);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#rightsec-Content .food img {
+    width: 100%;
+    height: 100%;
+}
+
+#rightsec-Content .food .description {
+    display: none;
+}
+
+#rightsec-Content .food:hover {
+    box-shadow: 2px 2px 12px 10px rgba(253, 234, 124, 0.959);
+}
+
+#rightsec-Content .food:hover .description {
+    position: absolute;
+    top: 80px;
+    height: 90%;
+    display: block;
+    background-image: linear-gradient(to bottom, rgb(255, 238, 0), rgba(255, 233, 106, 0.959));
+    box-sizing: border-box;
+    padding: 20px 30px 20px 12px;
+    border-radius: 0px 50% 0px 0px;
+    text-align: left;
+    animation: slideup ease-in 0.4s 1;
+}
+
+@keyframes slideup {
+    from {top: 480px;}
+    to {top: 80px;}
+}
+
+#rightsec-Content .food .description hr {
+    margin-left: -10px;
+    margin-right: 10px;
+    border: 1px solid rgba(212, 181, 0, 0.993);
+}
+
+#rightsec-Content .food .description h2 {
+    font: 40px 'Ma Shan Zheng', cursive;
+    margin-bottom: 6px;
+    margin-top: 8px;
+
+}
+
+#rightsec-Content .food .description p:first-of-type {
+    font: 300 22px "Londrina Solid", cursive;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    #rightsec-Content .food {
+        width: 300px;
+        height: 480px;
+    }
+
+    nav figure{
+        margin: 5px -30px 5px 0px;
+    }
+
+    #leftsec-nav {
+        margin-top: -110px;
+    }
+
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+        Title Name: TAR Hotpot
+        Authors:
+        1. Courtney Chew Cheah Ni
+        2. Leslie Chai Yee Xuan
+        3. Lee Khar Seng
+        4. Kueh Chaw Chun
+        5. Sheyn Tan Xin Ying
+        Date Created: 28/02/2021
+        Date Modified: 17/04/2021
+
+        File Name: faq.html
+        In charge: Sheyn Tan Xin Ying
+        -->
+        <meta charset="UTF-8">
+        <title>FAQ</title>
+        <link rel="shortcut icon" href="logo02-removebg-preview.png" type="image/x-con" />
+        <link href="base.css" rel="stylesheet" type="text/css" />
+    </head>
+    <style>
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: silver;
+            padding-bottom: 40px;
+        }
+
+        .flex-container a {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+
+        .header { 
+            background-color: rgb(155, 147, 137);
+            margin-top: 50px;
+            text-align: center;
+            color: white;                  
+            padding: 10px 10px 60px;
+            box-sizing: border-box;
+        }
+
+        .header h1 {
+            font-size: 72px;
+            margin-bottom: 5px;
+        }
+        
+        .header p {
+            font-size: 20px;
+            font-weight: bold;
+            width: 100%;
+            margin: auto;
+        }
+
+        .leftCol, .rightCol { 
+            width: 46%;
+            margin: 20px auto 10px;
+            color:rgb(43, 21, 0);
+            display: flex;
+            flex-flow: row wrap;
+            box-sizing: border-box;
+        }
+
+        .l-top, .r-top {
+            width: 100%;
+            height: 380px;
+            margin: 10px 10px 10px;
+            padding: 20px;
+            background-color: rgb(155, 147, 137);
+            box-sizing: border-box;
+        }
+
+        .l-top h2, .r-top h2 {
+            font-size: 30px;
+        }
+
+        .l-bottom, .r-bottom { 
+            width: 47%;
+            height: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: 10px auto;
+            color:rgb(43, 21, 0);
+            background-color: rgb(155, 147, 137);
+        }
+    </style>
+    <header>
+        <nav>
+            <figure>
+                <a href="index.html">
+                <img src="logo02-removebg-preview.png" alt="Restaurant logo" /></a>
+                <figcaption>TAR HOTPOT</figcaption>
+            </figure>
+            <ul id="main">
+                <li><a href="aboutus.html" target="_blank" rel="noopenner">ABOUT US</a></li>
+                <li><a href="menu.html" target="_blank" rel="noopenner">OUR MENU</a></li>
+                <li><a href="membership.html" target="_blank" rel="noopenner">MEMBERSHIP</a></li>
+                <li><a href="promotion.html" target="_blank" rel="noopenner">PROMOTION</a></li>
+                <li><a href="contact.html" target="_blank" rel="noopenner">CONTACT US</a>
+                <li id="more">MORE
+                    <ul id="more-content">
+                        <li><a href="reserve.html" target="_blank" rel="noopenner">RESERVATION</a></li>
+                        <li><a href="faq.html" target="_blank" rel="noopenner">FAQ</a></li>
+                        <li><a href="joinus.html" target="_blank" rel="noopenner">JOIN US</a></li>
+                        <li><a href="cusfeed.html" target="_blank" rel="noopenner">CUSTOMER FEEDBACK</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <div class="header">
+            <h1>FAQ</h1>
+            <p>For any other questions or concerns please contact us.</p>
+        </div>
+
+        <div class="flex-container">
+            <section class="leftCol">
+                <div class="l-top">
+                    <h2>What are the prices?</h2>
+                    <p>All our prices are fixed. Excluding news from our official website or restaurants, please do not believe any news about promotions from outsiders.  
+                       <br>
+                       <br>Kids (under 12 years old): RM 39.90
+                       <br>Adult : RM 49.90
+                       <br>Senior citizen (60 years old and above): RM 39.90</p>
+                </div>
+                <div class="l-bottom">
+                    <h2>How can I cancel my reservation?</h2>
+                    <p>To help our restaurants manage their seatings, please inform the selected branch at least an hour before the time  of your reservation.</p>
+                </div>
+                <div class="l-bottom">
+                    <h2>How can I be certain my booking has been confirmed?</h2>
+                    <p>On completion of your booking, you will receive either a confirmation email or message.If you did not receive a confirmation email or message within 24 hours of making your booking, please contact us directly to ensure that your booking has been confirmed.</p>
+                </div>
+            </section>
+            <section class="rightCol">
+                <div class="r-top">
+                    <h2>How do I make a reservation?</h2>
+                    <p>Please contact us to make a reservation at <a href="tel:+6032354689">03-2354689</a> or send us message via WhatsApp. 
+                        <br>If you wish to contact us via WhatsApp, please message us the details as below: <br>
+                        <br>Name             :
+                        <br>Phone Number     :
+                        <br>E-mail           :
+                        <br>Date             :
+                        <br>Time             :
+                        <br>Number of people :
+                        <br>Branch           :
+                        <br>
+                        <br>We also accept online reservation through our <a href="reserve.html">reservation page()</a>.</p>
+                </div>
+                <div class="r-bottom">
+                    <h2>What happens if I'm running late?</h2>
+                    <p>Please contact the respective branch to cancel or rebook your reservation, or else your reservation will be cancelled after 30 minutes of the scheduled time.</p>
+                </div> 
+                <div class="r-bottom">
+                    <h2>Why do you need my email address and phone number?</h2>
+                    <p>We will use the email and phone number provided to contact you if there are any changes to your reservation or as a reminder of the reservation if necessary.</p>
+                </div> 
+            </section>
+        </div>
+        <footer>
+            <p>Copyright &#169; 2021 TAR Hotpot. All Rights Reserved. | Photos are for reference only</p>
+        </footer>
+    </body>
+</html>

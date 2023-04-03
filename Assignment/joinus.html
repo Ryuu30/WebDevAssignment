@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+        Title Name: TAR Hotpot
+        Authors:
+        1. Courtney Chew Cheah Ni
+        2. Leslie Chai Yee Xuan
+        3. Lee Khar Seng
+        4. Kueh Chaw Chun
+        5. Sheyn Tan Xin Ying
+        Date Created: 28/02/2021
+        Date Modified: 17/04/2021
+
+        File Name: joinus.html
+        In charge: Sheyn Tan Xin Ying
+        -->
+        <meta charset="UTF-8">
+        <title>Join Us</title>
+        <link rel="shortcut icon" href="logo02-removebg-preview.png" type="image/x-icon">
+        <link href="base.css" rel="stylesheet" />
+
+    </head>
+    <style>
+        body {
+                color:white;
+        }
+
+        .join {
+            background-color: cadetblue;
+            font-size: 25px;
+            padding: 40px;
+            width: 100%;
+            margin: 1% auto 5%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .recruit {
+            float: left;
+            width: 28%;
+            height: auto;
+            margin-left: 10%;
+            margin-top: 5%;
+            border: 10px solid rgb(108, 199, 202);
+            padding: 30px;
+            font-size: 22px;
+            box-sizing: border-box;
+        }
+        
+        .mission {
+            float: right;
+            width: 600px;
+            margin-right: 15%;
+            margin-top: 5%;
+            border: 10px solid rgb(108, 199, 202);
+            text-align: center;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        .mission1 {
+            font-size: 25px;
+        }
+        .char {
+            float: right;
+            width: 600px;
+            margin-right: 15%;
+            margin-top: 2%;
+            margin-bottom: 5%;
+            border: 10px solid rgb(108, 199, 202);
+            text-align: center;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        .fr {
+            clear:both;
+            background-color: white;
+            padding: 10px;
+            margin: 30% 15% 5% 15%;
+        }
+        .bg {
+            background-color: rgb(168, 201, 230);
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 10px;
+        }
+        .tt {
+            background-color: rgb(168, 201, 230);
+            padding:20px;
+            font-size: 2ch;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 10px;
+        }
+
+        input:focus, select:focus { background-color: lightgray;}
+        input[type=text] {margin: 10px;}
+        input[type=select] {margin: 10px;}
+        input[type=date] {margin: 10px;}
+        input[type=email] {margin: 10px;}
+        input[type=tel] {margin: 10px;}
+        
+        div.recruit td {
+            padding-right: 35px;
+            padding-bottom: 20px;
+        }
+
+        .slides {
+            display: none;
+        }
+
+        .slides img {
+            vertical-align: middle;
+            height: 85%;
+            width: 100%;
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .dot-container {
+            text-align: center;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+        from {opacity: 0.4} 
+        to {opacity: 1}
+        }
+
+        @keyframes fade {
+        from {opacity: 0.4} 
+        to {opacity: 1}
+        }
+
+    </style>
+    <header>
+        <nav>
+            <figure>
+                <a href="index.html">
+                    <img src="logo02-removebg-preview.png" alt="Restaurant logo" />                  
+                    <figcaption>TAR HOTPOT</figcaption>
+                </a>
+            </figure>
+            <ul id="main">
+                <li><a href="aboutus.html" target="_blank">ABOUT US</a></li>
+                <li><a href="menu.html" target="_blank">OUR MENU</a></li>
+                <li><a href="membership.html" target="_blank">MEMBERSHIP</a></li>
+                <li><a href="promotion.html" target="_blank">PROMOTION</a></li>
+                <li><a href="contact.html" target="_blank">CONTACT US</a>
+                <li id="more">MORE
+                    <ul id="more-content">
+                        <li><a href="reserve.html" target="_blank">RESERVATION</a></li>
+                        <li><a href="faq.html" target="_blank">FAQ</a></li>
+                        <li><a href="joinus.html" target="_blank">JOIN US</a></li>
+                        <li><a href="cusfeed.html" target="_blank">CUSTOMER FEEDBACK</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <div class="join"><h1>Join Us</h1></div>
+        
+        <div class="slideshow-container">
+            
+            <div class="slides fade">
+                <img src="pic1.jpg" style="width: 100%;">
+            </div>
+            <div class="slides fade">
+                <img src="pic2.jpg" style="width: 100%;">
+            </div>
+            <div class="slides fade">
+                <img src="pic3.jpg" style="width: 100%;">
+            </div>
+            <div class="slides fade">
+                <img src="pic4.jpg" style="width: 100%;">
+            </div>
+            <div class="slides fade">
+                <img src="pic5.jpg" style="width: 100%;">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        </div><br/>
+        
+        <div class="dot-container">
+
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+
+        </div>
+    
+        <script>
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("slides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+
+        </script>  
+                
+        <div class="mission">
+
+            <h1>Our mission</h1>
+            <div class="mission1">
+                <p>We devote ourselves to creating happy hot pot time and spreading healthy hot pot culture to 
+                    foodies all over the world through selected products and innovative services.</p>
+            </div>
+
+        </div>
+    
+    <div class="recruit">
+
+        <h2>We are hiring!</h2>
+        <h3>Restaurant recruitment</h3>
+        <table>
+            <tr>
+                <td>&#8226 Supervisor</td>
+            </tr>
+            <tr>
+                <td>&#8226 Cashier</td>
+            </tr>
+            <tr>
+                <td>&#8226 Waiter/Waitress</td>
+            </tr>
+            <tr>
+                <td>&#8226 Dishwasher</td>
+            </tr>
+            <tr>
+                <td>&#8226 Cleaner</td>
+            </tr>
+            <tr>
+                <td>&#8226 Kitchen Helper</td>
+            </tr>
+        </table>
+        <img src="recruitment.png" style="width: 100%; padding-top:50%; padding-bottom: 13%;">
+        
+    </div>
+
+    <div class="char">
+
+        <h2>Staff character</h2>
+        <div class="mission1">
+            <p>Our staff boast qualities of honesty, innovation, modesty, diligence and passion. 
+                They are kind to people and have a sense of responsibility.
+                We always uphold the idea of “putting customers first and providing them with the best services”, and change traditional, standardized and single services into personalized services through innovation. 
+                <br></br>Following the basic principle of full devotion to services, we are committed to providing customers with considerate, warm and comfortable services. 
+                As we advocate the value of changing destiny through hard work, we strive to create a fair and equal working environment for our staff and implement a humanized and people-oriented management model so as to improve their value.
+            </p>
+        </div>
+        
+    </div>
+
+    <div class="fr">
+        
+        <form name="recruitment" id="recruitment">
+            <div class="tt"><h2>Recruitment Application Form</h2></div>
+            <div class="bg">
+                <fieldset id="personal">
+                    <legend>Personal Infomation</legend></br>
+                    Full Name :<input id="fname" type="text" required/></br></br>
+                    Full Address :<input id="address" type="text"/>
+                    State :
+                    <select id="state" name="state">
+                        <option value="johor">Johor</option>
+                        <option value="melaka">Melaka</option>
+                        <option value="negeriSembilan">Negeri Sembilan</option>
+                        <option value="selangor">Selangor</option>
+                        <option value="pahang">Pahang</option>
+                        <option value="perak">Perak</option>
+                        <option value="kelantan">Kelantan</option>
+                        <option value="terengganu">Terengganu</option>
+                        <option value="kedah">Kedah</option>
+                        <option value="penang">Penang</option>
+                        <option value="perlis">Perlis</option>
+                        <option value="sabah">Sabah</option>
+                        <option value="sarawak">Sarawak</option>
+                    </select></br></br>
+                    Phone Number :<input id="tel" type="tel" pattern="\d{10,11}" required></br></br>
+                    E-mail :<input id="email" type="email" required></br></br>
+                    Birth Date :<input id="date" type="date"></br></br>
+                    <input id="reset" type="reset"/></br>
+                </fieldset>
+                <br>
+                <fieldset id="empdesired">
+                    <legend>Employment Desired</legend></br>
+                    Position applying for :
+                    <select id="job" name="job">
+                        <option value="supervisor">Supervisor</option>
+                        <option value="casheir">Cashier</option>
+                        <option value="waiter">Waiter/Waitress</option>
+                        <option value="dishwasher">Dishwasher</option>
+                        <option value="cleaner">Cleaner</option>
+                        <option value="kitchelper">Kitchen Helper</option>
+                    </select></br></br>
+                    Date can start :<input id="sdate" type="date"></br></br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Previous Employment</legend></br>
+                    Previous Employer :<input id="preemp" type="text"/></br></br>
+                    Position :<input id="preposition" type="text"/></br></br>
+                    Salary :<input id="presalary" type="text"/></br></br>
+                    Start Date :<input id="presdate" type="date"/></br></br>
+                    End Date :<input id="preedate" type="date"/></br></br>
+                </fieldset>
+                <br>
+                <fieldset id="sendform">
+                    <legend>Send Application</legend></br>
+                    <p>By clicking the submit button below, I certify that all of the information provided by me on this application is true and complete, and I understand that if any false information, ommissions, or misrepresentations are discovered, my application may be rejected and, if I am employed, my employement may be terminated at any time.<br></br> 
+                        In consideration of my employment, I agree to conform to the company's rules and regulations, and I agree that my employment and compenstation can be terminated, with or without cause, and with or without notice, at any time, at either my or the company's option.<br></br> 
+                        I also understand and agree that the terms and conditions of my employment may be changed, with or without cause, and with or without notice, at any time by the company.</p>
+                    <br>
+                    <input id="submit" type="submit"/></br>
+                </fieldset>
+            </div>
+        </form>
+    </div>
+
+
+    <footer>
+         <p>Copyright &#169; 2021 TAR Hotpot. All Rights Reserved. | Photos are for reference only</p>
+    </footer>
+    </body>    
+</html>       
