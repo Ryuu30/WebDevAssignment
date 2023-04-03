@@ -1,0 +1,145 @@
+@font-face{
+    font-family:'Kiwi Maru';
+    src: url(KiwiMaru-Light.ttf);
+}
+@font-face{
+    font-family:'Caveat';
+    src: url(Caveat-Regular.ttf);
+}
+body{
+    box-sizing: border-box;
+    min-width: 1000px;
+}
+div.aboutus{
+    box-sizing: border-box;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+div.story,div.mv,div.where{
+    box-sizing: border-box;
+    height: 280px;
+    font-size: 55px;
+    border:2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+div.story{
+    position: relative;
+    color: white;
+    margin-top: 30px;
+    padding: 0px 30px 15px 150px;
+    background:black url('story.jpg') no-repeat scroll;
+    background-size: 101%;
+    background-position: center 28%;
+    margin-bottom: 15px;
+}
+img#chefcap{
+    position: absolute;
+    transform: rotateY(180deg);
+    top: 25px;
+    left: 130px;
+}
+div.bla{
+    display:none;
+    position: relative;
+    z-index: -1;
+    margin-top: -40px;
+    border: 5px solid red;
+    padding: 15px 35px;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 15px;
+}
+div.bla p{
+    font-size: 20px;
+    line-height: 1.5em;
+    text-align: justify;
+    font-family: Helvetica, sans-serif;
+}
+div.bla h1{
+    font-family: "kiwi maru";
+    line-height: 30px;
+}
+input#storycheck:checked+div,input#mvcheck:checked+div{
+    display: block;
+}
+div.mv
+{   
+    position: relative;
+    text-align: right;
+    background: url('mv3.jpg') no-repeat scroll ;
+    background-size: cover;
+    background-position:left 50%;
+    margin-bottom: 15px;
+}
+
+div.mv #header{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    right: 42px;
+    bottom: 85px;
+}
+
+div.mission{
+    display: none;
+    background-color: white;
+    margin-top: -30px ;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 1.5em;
+    text-align: justify;
+    font-family: Helvetica, sans-serif;
+    border: 5px solid red;
+    border-radius: 5px;
+}
+div.mission h1{
+    font-family: 'kiwi maru';
+    font-size: 33px;
+    padding-left: 35px;
+    line-height: 30px;
+}
+div.mission p{
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-bottom: 15px;
+}
+div.where{
+    position: relative;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: red;
+    background:#ffffff url(where2.jpg) no-repeat scroll;
+    background-position: 90% 65%; 
+    background-size: 470px 200px;
+    margin-bottom: 15px;
+}
+
+div.story:hover,div.mv:hover,div.where:hover{
+    border-color: red;
+    border-width: 5px;
+    box-shadow: rgb(245, 178, 189) 4px 4px 18px;
+}
+
+
+@media only screen and  (max-width: 1280px){
+    div.where{
+        background-position: 93% 65%; 
+        background-size: 55% 60%;
+    }
+    div.mv{   
+    /* position: relative;
+    text-align: right; */
+    background: url('mv3.jpg') no-repeat scroll ;
+    background-size: cover;
+    background-position:left 50%;
+    font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+#head1{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    -webkit-text-fill-color: rgba(255, 255, 255);
+    word-spacing: 15px;
+}
