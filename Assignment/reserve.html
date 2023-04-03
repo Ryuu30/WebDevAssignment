@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+        Title Name: TAR Hotpot
+                    
+        Authors:
+        1. Courtney Chew Cheah Ni
+        2. Leslie Chai Yee Xuan
+        3. Lee Khar Seng
+        4. Kueh Chaw Chun
+        5. Sheyn Tan Xin Ying
+        Date Created: 28/02/2021
+        Date Modified: 17/04/2021
+
+        File Name: reserve.html
+        In charge: Kueh Chaw Chun
+        -->
+        <meta charset="UTF-8">
+        <title>Reservation</title>
+        <link href=”#” rel=”stylesheet” type=”text/css” />
+        <link rel="shortcut icon" href="logo02-removebg-preview.png" type="image/x-icon">
+        <link href="base.css" rel="stylesheet" />
+        <script src="reserve.js"></script>
+
+        <style>
+        
+        section {
+            text-align: center;
+            color: white;
+            width: 100%;
+            text-align: left;
+        }
+        
+        section h1 {
+            font-family:"Lucida Hanwriting", "Brush Script MT", Cursive ;
+            text-align: center;
+            font-size: 80px;
+            margin: auto;
+        }
+        
+        legend {
+            padding: 15px 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        
+        fieldset {
+            margin: 1% 30% 2.5%;
+            background-color: rgba(78, 32, 243, 0.692) ;
+            padding-bottom: 3%;
+        }
+        
+        fieldset img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 5%;
+            width:8em;
+            height:8em;
+        }
+        
+        fieldset p {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        div {
+            padding-left: 2%;
+            padding-right: 2%;
+            font-family: Arial, Helvetica, sans-serif;
+      
+        }
+        div.formRow {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+            margin: 3px 0px;
+        }
+        
+        div.formRow > * {
+            -webkit-flex: 1 1 150px;
+            flex: 1 1 150px;
+            margin-top: 2% ; 
+        }
+        
+        div.submit {
+            text-align: center;
+            padding-top: 5%;
+        }
+        
+        div.submit input {
+            background-color: rgb(105, 178, 238);
+            color: white;
+            font-weight:bold;
+            margin: 2%;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            margin-bottom: 0px;
+            margin-top: 100px;
+        }
+
+        input#name:focus:valid,
+        input#phoneNum:focus:valid,
+        input#email:focus:valid {
+            background: rgb(105, 178, 238)url(check.png) right/contain no-repeat;
+        } 
+
+        input#name:focus:invalid,
+        input#phoneNum:focus:invalid,
+        input#email:focus:invalid {
+            background: rgb(238, 105, 134)url(remove.png) right/contain no-repeat;
+        } 
+
+
+        </style>
+
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <figure>
+                    <a href="index.html">
+                        <img src="logo02-removebg-preview.png" alt="Restaurant logo" />                  
+                        <figcaption>TAR HOTPOT</figcaption>
+                    </a>
+                </figure>
+                <ul id="main">
+                    <li><a href="aboutus.html" target="_blank">ABOUT US</a></li>
+                    <li><a href="menu.html" target="_blank">OUR MENU</a></li>
+                    <li><a href="membership.html" target="_blank">MEMBERSHIP</a></li>
+                    <li><a href="promotion.html" target="_blank">PROMOTION</a></li>
+                    <li><a href="contact.html" target="_blank">CONTACT US</a>
+                    <li id="more">MORE
+                        <ul id="more-content">
+                            <li><a href="reserve.html" target="_blank">RESERVATION</a></li>
+                            <li><a href="faq.html" target="_blank">FAQ</a></li>
+                            <li><a href="joinus.html" target="_blank">JOIN US</a></li>
+                            <li><a href="cusfeed.html" target="_blank">CUSTOMER FEEDBACK</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section>
+            <form action="http://www.example.com/Reservation" method="post">
+            <h1>Reservation</h1>
+            
+            <Fieldset>
+        
+                <legend>By Form</legend>
+        
+                <div class="formRow">
+                    <label for="name">Name &#128395: </label>
+                    <input name="name" id="name" type="text" pattern="(?=.*\s)([?=.*\A-Za-z]){1,}"  required > <br/><br/>
+                </div>
+        
+                <div class="formRow">
+                    <label for="numberOfPeople">Number of people &#128106: </label>
+                    <input name="numberOfPeople" id="numberOfPeople" type="number" min="1" max="15" required><br/><br/>
+                </div>
+        
+                <div class="formRow">
+                    <label for="ReserveDate">Date &#128198: </label>
+                    <input name="ReserveDate" id="ReserveDate" type="date" required><br/><br/>
+                </div>
+        
+                <div class="formRow">
+                    <label for="ReserveTime">Time &#128336: </label>
+                    <input name="ReserveTime" id="ReserveTime" type="time" required><br/><br/>
+                </div>
+        
+                <div class="formRow">
+                    <label for="phoneNum">Phone number &#9743: </label>
+                    <input name="phoneNum" id="phoneNum" type= "tel" pattern="\d{10,11}" required> <br/><br/>
+                </div>
+        
+                <div class="formRow">
+                    <label for="email">Email Address &#x2709:  </label>
+                    <input name="email" id="email" type= "email" required> <br/><br/>
+                </div>
+        
+                <div class="formRow">
+                    <label for="branches">Branch &#127972: </label>
+                    <select name="branches" id="Branches" required>
+                        <option value="Kuala Lumpur">Kuala Lumpur</option>
+                        <option value="Johor">Johor</option>
+                        <option value="Penang">Penang</option>
+                    </select><br/><br/>
+                </div>
+        
+                <div class="submit">
+                    <input type="submit" value="Submit Reservation ✔"/>
+                    <input type="reset" value="Cancel Reservation ✘"/>
+                 </div>
+            </Fieldset>
+            </form>
+        
+        
+            <fieldset>
+                <p>Please scan the QR code to WhatsApp us</p><br/>
+                <legend>Through Whatsapp</legend>
+                <a href="https://wa.link/5vwbu4"  target="_blank"><img src="whatsappreserve.jpeg" alt="Whatsapp Reservation " /></a>
+            </fieldset><br/><br/>
+        
+        </section>
+        
+        <footer>
+            <p>Copyright &#169; 2021 TAR Hotpot. All Rights Reserved. | Photos are for reference only</p>
+        </footer>
+    </body>
+</html>
